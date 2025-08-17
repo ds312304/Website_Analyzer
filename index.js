@@ -3,7 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
-import router from './src/routes.js';
+import router from './routes.js';
 
 
 const app = express();
@@ -17,5 +17,7 @@ app.use(rateLimit({
 }))
 
 app.use('/', router);
-
+app.listen(process.env.PORT || 4000, () => {
+  console.log(`Server is running on port ${process.env.PORT || 4000}`);
+});
 export default app;
