@@ -3,7 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
-import router from './routes.js';
+import router from './src/routes.js';
 
 
 const app = express();

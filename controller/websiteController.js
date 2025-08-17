@@ -2,7 +2,7 @@ import pool from "../db.js";
 import * as cheerio from "cheerio";
 import chromium from "chrome-aws-lambda";
 import puppeteer from "puppeteer-core";
-import { generateSummary } from "../../services/openaiService.js";
+import { generateSummary } from "../services/openaiService.js";
 
 //scrape with cheerio
 async function scrapeWithCheerio(urlOrHtml, isHtml = false) {
