@@ -16,6 +16,6 @@ app.use(rateLimit({
     windowMs: 15 * 60 * 1000,
 }))
 
-app.use('/api', router);
+app.use('/', router);
 
 export default app;
